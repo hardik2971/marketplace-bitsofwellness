@@ -24,7 +24,7 @@ export default function RegisterPage() {
           <Logo className="h-16 w-auto" />
           <p className="mt-8 text-3xl leading-tight font-semibold text-ink">Launch your health &amp; food business faster</p>
           <p className="mt-4 max-w-md text-base leading-7 text-body">
-            Create an account to purchase ready-made apps, UI kits and installation plans.
+            Create an account to purchase ready-made apps, product kits and installation plans.
           </p>
           <ul className="mt-8 space-y-4">
             {perks.map(({ Icon, text }) => (

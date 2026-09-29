@@ -26,7 +26,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { SectionHeading, CenterHeading } from "@/components/SectionHeading";
 import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
-import { featuredApps, featuredKits, products } from "@/data/products";
+import { featuredApps, productKits, products } from "@/data/products";
 import { homeFaqs, testimonials } from "@/data/content";
 import { site } from "@/lib/site";
 
@@ -110,7 +110,7 @@ export default function HomePage() {
             id="hero-title"
             className="mt-7 max-w-5xl text-[34px] leading-[1.12] font-semibold tracking-tight text-ink sm:text-5xl lg:text-[60px] lg:leading-[1.08]"
           >
-            Ready Made Health &amp; Food App Solutions - Source Code &amp; UI Kits
+            Ready Made Health &amp; Food App Solutions - Source Code &amp; Product Kits
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-7 text-body">
             Skip months of development with proven, customizable food delivery, diet, fitness and wellness apps backed by
@@ -196,17 +196,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* UI kits */}
+      {/* Our kits */}
       <section aria-labelledby="kits-title" className="cv-auto container-x py-16 lg:py-20">
         <SectionHeading
           id="kits-title"
-          title="UI Kits"
-          description="Design faster with ready-made Figma UI kits for wellness apps — hundreds of editable components, screens, and styles built with auto layout."
+          title="Our Kits"
+          description="Complete, ready-to-launch product kits — customer apps, websites and admin panels with full source code, built by our team for health, food and wellness businesses."
           icon={<Layers aria-hidden="true" className="size-5" />}
-          cta={{ href: "/products?category=app-ui-kit", label: "View All UI Kits" }}
+          cta={{ href: "/products", label: "View All Kits" }}
         />
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {featuredKits.map((p) => (
+          {productKits.map((p) => (
             <ProductCard key={p.slug} product={p} />
           ))}
         </div>

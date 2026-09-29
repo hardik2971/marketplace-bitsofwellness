@@ -68,7 +68,7 @@ export const homeFaqs: FaqItem[] = [
   },
   {
     q: "Do you offer both website and app source code solutions?",
-    a: "Yes. Most products ship with Android and iOS apps built in Flutter, a responsive website or PWA, and a Laravel admin panel. We also sell Figma UI kits for design teams.",
+    a: "Yes. Most products ship with Android and iOS apps built in Flutter, a responsive website or PWA, and a Laravel admin panel.",
   },
   {
     q: "How can I contact the support team?",

@@ -1,8 +1,7 @@
-export type ProductType = "app" | "uikit" | "addon";
+export type ProductType = "app" | "addon";
 
 export type CategoryKey =
   | "add-ons"
-  | "app-ui-kit"
   | "business-service"
   | "ecommerce-marketplace"
   | "education-lms"
@@ -60,7 +59,6 @@ export type Product = {
 
 export const categories: { key: CategoryKey; label: string }[] = [
   { key: "add-ons", label: "Add-ons" },
-  { key: "app-ui-kit", label: "App UI Kit" },
   { key: "business-service", label: "Business and Service" },
   { key: "ecommerce-marketplace", label: "eCommerce and Marketplace" },
   { key: "education-lms", label: "Education and LMS" },
@@ -69,8 +67,6 @@ export const categories: { key: CategoryKey; label: string }[] = [
 
 const appStack = ["Flutter", "Laravel", "Next.js", "MySQL", "Firebase"];
 const appIntegrations = ["Firebase Cloud Messaging", "SMTP Email", "SMS Gateway Integration", "Google Gemini AI"];
-const kitStack = ["Figma", "Auto Layout", "Variables", "Design System"];
-const kitIntegrations = ["Google Fonts", "Iconly Icons", "Light & Dark Mode"];
 
 export const products: Product[] = [
   {
@@ -415,150 +411,6 @@ export const products: Product[] = [
     techStack: appStack,
     integrations: appIntegrations,
   },
-  {
-    slug: "spacare-home-spa-wellness-service-ui-kit",
-    name: "SpaCare",
-    title: "SpaCare – On Demand Home Spa & Wellness Service App UI Kit",
-    type: "uikit",
-    category: "app-ui-kit",
-    featured: true,
-    price: 2699,
-    oldPrice: 3699,
-    theme: { from: "#1d4ed8", to: "#3b82f6", ink: "light" },
-    icon: "spa",
-    tagline: "On Demand Home Spa & Wellness App",
-    chips: ["Fully Customizable", "100+ Mobile Screens", "Auto Layout"],
-    summary: "A Figma UI kit for home spa, massage and wellness booking apps with 100+ auto-layout screens.",
-    version: "1.0",
-    releaseDate: "01-06-2026",
-    lastUpdate: "01-09-2026",
-    platform: "Figma",
-    techStack: kitStack,
-    integrations: kitIntegrations,
-  },
-  {
-    slug: "bikefit-cycling-fitness-ecommerce-ui-kit",
-    name: "BikeFit",
-    title: "BikeFit – Single Vendor Cycling & Fitness Gear E-Commerce App UI Kit",
-    type: "uikit",
-    category: "app-ui-kit",
-    featured: true,
-    price: 2699,
-    oldPrice: 3699,
-    theme: { from: "#ea580c", to: "#f59e0b", ink: "light" },
-    icon: "bike",
-    tagline: "Single Vendor Fitness Gear E-Commerce UI Kit",
-    chips: ["Multi Purpose", "45+ Ready Screens", "State Widgets"],
-    summary: "A Figma UI kit for cycling and fitness gear stores with 45+ ready-made screens and components.",
-    version: "1.0",
-    releaseDate: "10-06-2026",
-    lastUpdate: "03-09-2026",
-    platform: "Figma",
-    techStack: kitStack,
-    integrations: kitIntegrations,
-  },
-  {
-    slug: "farmfresh-smart-organic-farming-ui-kit",
-    name: "FarmFresh",
-    title: "FarmFresh – Smart & Modern Organic Farming App UI Kit",
-    type: "uikit",
-    category: "app-ui-kit",
-    featured: true,
-    price: 2699,
-    oldPrice: 3699,
-    theme: { from: "#ffedd5", to: "#fff7ed", ink: "dark" },
-    icon: "sprout",
-    tagline: "Smart and Modern Organic Farming App",
-    chips: ["Fully Customize", "Design System", "70+ Screens"],
-    summary: "A Figma UI kit for organic farming, crop monitoring and farm-to-table apps with 70+ screens.",
-    version: "1.0",
-    releaseDate: "15-06-2026",
-    lastUpdate: "05-09-2026",
-    platform: "Figma",
-    techStack: kitStack,
-    integrations: kitIntegrations,
-  },
-  {
-    slug: "watermate-hydration-habit-tracker-ui-kit",
-    name: "WaterMate",
-    title: "WaterMate - Hydration & Healthy Habit Tracker App UI Kit",
-    type: "uikit",
-    category: "app-ui-kit",
-    featured: true,
-    price: 2699,
-    oldPrice: 3699,
-    theme: { from: "#dcfce7", to: "#f0fdf4", ink: "dark" },
-    icon: "droplet",
-    tagline: "Hydration & Habit Tracking App",
-    chips: ["Customizable", "Global Styles", "60+ Screens"],
-    summary: "A Figma UI kit for water intake, habit streak and wellness reminder apps with 60+ screens.",
-    version: "1.0",
-    releaseDate: "20-06-2026",
-    lastUpdate: "07-09-2026",
-    platform: "Figma",
-    techStack: kitStack,
-    integrations: kitIntegrations,
-  },
-  {
-    slug: "mindcalm-meditation-sleep-ui-kit",
-    name: "MindCalm",
-    title: "MindCalm - AI Meditation & Sleep App UI Kit",
-    type: "uikit",
-    category: "app-ui-kit",
-    price: 2699,
-    oldPrice: 3699,
-    theme: { from: "#0f172a", to: "#1e293b", ink: "light" },
-    icon: "moon",
-    tagline: "AI Meditation & Sleep Figma UI Kit",
-    chips: ["Dark Mode", "50+ Screens", "Components"],
-    summary: "A calming dark-mode Figma UI kit for meditation, breathing and sleep-story apps.",
-    version: "1.0",
-    releaseDate: "25-06-2026",
-    lastUpdate: "09-09-2026",
-    platform: "Figma",
-    techStack: kitStack,
-    integrations: kitIntegrations,
-  },
-  {
-    slug: "snackbox-healthy-snacks-shop-ui-kit",
-    name: "SnackBox",
-    title: "SnackBox - Healthy Snacks Subscription Shop App UI Kit",
-    type: "uikit",
-    category: "app-ui-kit",
-    price: 2699,
-    oldPrice: 3699,
-    theme: { from: "#fdf2f8", to: "#fff1f2", ink: "dark" },
-    icon: "cookie",
-    tagline: "Healthy Snacks Subscription Shop App",
-    chips: ["Fully Customize", "Design System", "Google Font"],
-    summary: "A Figma UI kit for healthy snack subscription boxes and D2C food brands.",
-    version: "1.0",
-    releaseDate: "28-06-2026",
-    lastUpdate: "11-09-2026",
-    platform: "Figma",
-    techStack: kitStack,
-    integrations: kitIntegrations,
-  },
-  {
-    slug: "podhealth-wellness-podcast-music-ui-kit",
-    name: "PodHealth",
-    title: "PodHealth - Wellness Podcast & Music Mobile App UI Kit",
-    type: "uikit",
-    category: "app-ui-kit",
-    price: 2699,
-    oldPrice: 3699,
-    theme: { from: "#f8fafc", to: "#f1f5f9", ink: "dark" },
-    icon: "headphones",
-    tagline: "Wellness Podcast & Music UI Kit",
-    chips: ["50+ Screens", "20+ Components", "Figma Kit"],
-    summary: "A Figma UI kit for wellness podcasts, guided audio and relaxing music streaming apps.",
-    version: "1.0",
-    releaseDate: "02-07-2026",
-    lastUpdate: "13-09-2026",
-    platform: "Figma",
-    techStack: kitStack,
-    integrations: kitIntegrations,
-  },
 ];
 
 /** Product → Higgsfield photo (public/images). Add-ons keep their SVG artwork. */
@@ -576,13 +428,6 @@ const productImages: Record<string, string> = {
   "juicebar-smoothie-juice-ordering-app": "juice",
   "greenmart-multi-vendor-organic-marketplace": "farm",
   "gympro-gym-membership-trainer-booking": "gym",
-  "spacare-home-spa-wellness-service-ui-kit": "spa",
-  "bikefit-cycling-fitness-ecommerce-ui-kit": "gym",
-  "farmfresh-smart-organic-farming-ui-kit": "farm",
-  "watermate-hydration-habit-tracker-ui-kit": "juice",
-  "mindcalm-meditation-sleep-ui-kit": "yoga",
-  "snackbox-healthy-snacks-shop-ui-kit": "rainbow",
-  "podhealth-wellness-podcast-music-ui-kit": "morning",
 };
 for (const p of products) {
   const img = productImages[p.slug];
@@ -595,6 +440,7 @@ export const discountOf = (p: Product) =>
   p.oldPrice && p.oldPrice > p.price ? Math.round(((p.oldPrice - p.price) / p.oldPrice) * 100) : 0;
 
 export const featuredApps = products.filter((p) => p.featured && p.type === "app").slice(0, 8);
-export const featuredKits = products.filter((p) => p.featured && p.type === "uikit").slice(0, 4);
+/** Home "Our Kits" row: ready-made app kits that aren't already in Featured Products. */
+export const productKits = products.filter((p) => !p.featured && p.type === "app").slice(0, 4);
 
 export const categoryLabel = (key: CategoryKey) => categories.find((c) => c.key === key)?.label ?? key;

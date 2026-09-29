@@ -29,40 +29,6 @@ export const licenseRows: { label: string; regular: boolean; extended: boolean }
 export function productContent(p: Product): ProductContent {
   const n = p.name;
 
-  if (p.type === "uikit") {
-    return {
-      overview: [
-        `${p.title} is a premium Figma design kit crafted for health and wellness products. ${p.summary}`,
-        `Every screen is built with auto layout, variables and reusable components, so designers and developers can move from idea to a polished prototype in days instead of weeks.`,
-        `Use ${n} to pitch clients, validate your app idea, or hand off pixel-perfect designs to your Flutter, React Native or web team.`,
-      ],
-      demos: [],
-      credentials: [],
-      why: [
-        { title: "Pixel-Perfect Screens", text: "Carefully designed screens that follow modern mobile guidelines and accessibility best practices." },
-        { title: "Built with Auto Layout", text: "Every frame resizes cleanly, making it easy to adapt designs to any device size." },
-        { title: "Global Design System", text: "Colours, typography and spacing are tokenised so you can rebrand the kit in minutes." },
-        { title: "Developer Friendly", text: "Consistent naming and components make hand-off to developers fast and accurate." },
-        { title: "Light & Dark Ready", text: "Switch themes using Figma variables without rebuilding screens." },
-        { title: "Free Lifetime Updates", text: "Get new screens and improvements at no additional cost." },
-      ],
-      problems: [],
-      ecosystem: [],
-      requirements: [
-        { title: "Built In:", text: "Figma (latest version)" },
-        { title: "Fonts:", text: "Google Fonts – free for commercial use" },
-        { title: "Skill Level:", text: "Beginner friendly – no plugins required" },
-      ],
-      youGet: ["Figma Source File", "Design System & Tokens", "Reusable Components", "Iconography Set", "Lifetime Updates", "Email Support"],
-      revenue: [],
-      faqs: [
-        { q: `Can I use ${n} for client projects?`, a: "Yes. A Regular License covers one end product for you or a client; for multiple end products purchase an Extended License." },
-        { q: "Do I need a paid Figma plan?", a: "No. The kit works on the free Figma plan, although some team features require a paid plan." },
-        { q: "Is source code included?", a: "UI kits contain design files only. Check our app products if you need full source code." },
-      ],
-    };
-  }
-
   if (p.type === "addon") {
     return {
       overview: [

@@ -33,7 +33,7 @@ export function CartView() {
       <div className="rounded-2xl border border-dashed border-gray-300 bg-white px-6 py-16 text-center">
         <ShoppingCart aria-hidden="true" className="mx-auto size-12 text-brand-600" strokeWidth={1.5} />
         <p className="mt-4 text-xl font-semibold text-ink">Your cart is empty</p>
-        <p className="mt-2 text-body">Browse our ready-made apps and UI kits to get started.</p>
+        <p className="mt-2 text-body">Browse our ready-made apps and product kits to get started.</p>
         <Link href="/products" className="btn-primary mt-6">
           Browse Products <ArrowRight aria-hidden="true" className="size-4" />
         </Link>

@@ -89,7 +89,7 @@ export const infoPages = {
     blocks: [
       {
         heading: "Digital Products",
-        body: ["Because source code and UI kits are delivered digitally and cannot be returned, all sales are final once the download link has been accessed, except in the cases listed below."],
+        body: ["Because source code and product kits are delivered digitally and cannot be returned, all sales are final once the download link has been accessed, except in the cases listed below."],
         list: ["The product is materially different from its description", "A critical bug cannot be fixed by our team within 14 days", "You were charged twice for the same order"],
       },
       {
@@ -174,7 +174,7 @@ export const infoPages = {
     label: "Documentation",
     title: "Documentation",
     metaTitle: "Documentation – Setup Guides for Every Product",
-    description: "Step-by-step setup guides for BitesOfWellness Flutter apps, Laravel admin panels, Next.js storefronts and UI kits.",
+    description: "Step-by-step setup guides for BitesOfWellness Flutter apps, Laravel admin panels, Next.js storefronts and product kits.",
     blocks: [
       {
         heading: "Admin Panel (Laravel)",

@@ -7,9 +7,9 @@ import { absUrl } from "@/lib/site";
 import { thumbDataUri } from "@/lib/thumbs";
 
 export const metadata: Metadata = {
-  title: "Products – Health, Food & Wellness App Source Code and UI Kits",
+  title: "Products – Health, Food & Wellness App Source Code and Product Kits",
   description:
-    "Browse ready-made grocery delivery, diet planner, meal subscription, fitness, clinic and wellness app source code plus Figma UI kits. Filter by category, price and rating.",
+    "Browse ready-made grocery delivery, diet planner, meal subscription, fitness, clinic and wellness app source code and product kits. Filter by category, price and rating.",
   alternates: { canonical: "/products" },
   openGraph: { url: "/products" },
 };
